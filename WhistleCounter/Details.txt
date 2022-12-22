@@ -1,0 +1,11 @@
+In this project, the code is written in a way such that each of the components are connected to Arduino UNO with their respective connections ensuring there is no conflict between any parts.
+The several components that are used are :
+  Arduino UNO
+  Piezo buzzer
+  LM-393 Sound sensor(with 4 pins)
+  Push button
+  Breadboard
+  9V Battery and Battery Pin
+  Jumper Wires(M-M and M-F)
+The code has been implemented such that we input a number by pressing in the button the number of times as we want our whistles preferred. We can hold the button in to reset back to zero in case we press an extra time by mistake. When you press in a the button to increase a count you will hear a sound. I have added a maximum limit to the number of whistles that can be detected so that it suits the real world application, if limit exceeded a sound will buzz for a number of times to indicate the number has been exceeded. When a blow/whistle from a pressure cooker is detected the count will go decrease by 1, this has been done by ensuring that the blow/whistle has been continuously detected for a preferred period of time. 
+(WORKING ON) When the counter goes back to 0 after detecting all n number of whistles a sound will keep buzzing until the button is pushed again.
